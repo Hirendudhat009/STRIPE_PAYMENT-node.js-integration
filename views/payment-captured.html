@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Test App</title>
+</head>
+
+<body class="bg-gray-900">
+  <nav class="bg-purple-900 h-20 flex justify-center">
+    <h1 class="text-white text-5xl">Stripe Demo App</h1>
+  </nav>
+
+  <div class="flex justify-center mt-32">
+
+    <form action="/payment-capture" method="POST" class="flex flex-col w-1/3">
+      <label class="form-check-label text-white" for="flexCheckChecked">
+        Plaese Insert your payment id for confirm payment
+      </label>
+      <input class="bg-transparent text-white p-2 h-10 mb-4 mt-4" type="text" name="paymentId" placeholder="paymentId">
+      <input class="bg-transparent text-white p-2 h-10 mb-4 mt-4" type="text" name="amount" placeholder="amount">
+      <button class="text-white bg-purple-900 p-4 rounded" type="submit">Submit Payment</button>
+    </form>
+  </div>
+</body>
+
+</html>
